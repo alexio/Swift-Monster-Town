@@ -8,5 +8,20 @@
 
 import Foundation
 
-print("Hello, World!")
+var myTown = Town()
+myTown.changePopulation(500)
+myTown.printTownDescription()
+
+let fredTheZombie = Zombie()
+fredTheZombie.changeName("Fred the Zombie", walksWithLimp: false)
+fredTheZombie.town = myTown
+fredTheZombie.terrorizeTown()
+fredTheZombie.town?.printTownDescription()
+
+var buffyTheVampire = Vampire()
+buffyTheVampire.town = myTown
+print("Thralls: " + buffyTheVampire.thralls.description)
+buffyTheVampire.terrorizeTown()
+print("Thralls: " + buffyTheVampire.thralls.description)
+buffyTheVampire.town?.printTownDescription()
 
