@@ -7,10 +7,19 @@
 //
 
 class Zombie: Monster {
+    override class var spookyNoise: String {
+        return "Brains..."
+    }
+    
     var walksWithLimp = true
+    internal private(set) var isFallingApart = false
     
     final override func terrorizeTown() {
-        if town?.population > 0 {
+//        if town?.population > 0 {
+//            town?.changePopulation(-10)
+//        }
+        
+        if !isFallingApart {
             town?.changePopulation(-10)
         }
         super.terrorizeTown()

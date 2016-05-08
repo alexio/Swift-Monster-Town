@@ -11,6 +11,8 @@ import Foundation
 var myTown = Town()
 myTown.changePopulation(500)
 myTown.printTownDescription()
+let ts = myTown.townSize
+print(ts)
 
 let fredTheZombie = Zombie()
 fredTheZombie.changeName("Fred the Zombie", walksWithLimp: false)
@@ -24,4 +26,10 @@ print("Thralls: " + buffyTheVampire.thralls.description)
 buffyTheVampire.terrorizeTown()
 print("Thralls: " + buffyTheVampire.thralls.description)
 buffyTheVampire.town?.printTownDescription()
+
+if Zombie.isTerrifying {
+    print("Run away!")
+}
+
+print("Falling apart: " + fredTheZombie.isFallingApart.description)
 

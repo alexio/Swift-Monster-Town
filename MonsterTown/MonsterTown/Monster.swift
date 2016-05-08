@@ -9,6 +9,22 @@
 class Monster {
     var town: Town?
     var name = "Monster"
+    
+    static let isTerrifying = true
+    
+    class var spookyNoise: String {
+        return "Grrr"
+    }
+    
+    var victimPool: Int {
+        get {
+            return town?.population ?? 0
+        }
+        set(newVictimPool) {
+            town?.population = newVictimPool
+        }
+    }
+    
     func terrorizeTown() {
         if town != nil {
             print("\(name) is terrorizing a town!")

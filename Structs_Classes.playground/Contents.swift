@@ -13,7 +13,12 @@ struct Body {
 
 class Person {
     var body: Body = Body()
-    
+    var bmi: Double {
+        get {
+            return (body.weightInKilos /
+                    (body.heightInMeters * body.heightInMeters))
+        }
+    }
 }
 
 var body = Body()
