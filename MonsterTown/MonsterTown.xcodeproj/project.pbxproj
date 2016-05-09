@@ -12,6 +12,7 @@
 		66DC9C5F1CDFB053001A8E25 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC9C5E1CDFB053001A8E25 /* Monster.swift */; };
 		66DC9C611CDFB11D001A8E25 /* Zombie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC9C601CDFB11D001A8E25 /* Zombie.swift */; };
 		66DC9C651CDFB3B5001A8E25 /* Vampire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC9C641CDFB3B5001A8E25 /* Vampire.swift */; };
+		66DC9C671CDFE50C001A8E25 /* Mayor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC9C661CDFE50C001A8E25 /* Mayor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		66DC9C5E1CDFB053001A8E25 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		66DC9C601CDFB11D001A8E25 /* Zombie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zombie.swift; sourceTree = "<group>"; };
 		66DC9C641CDFB3B5001A8E25 /* Vampire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vampire.swift; sourceTree = "<group>"; };
+		66DC9C661CDFE50C001A8E25 /* Mayor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mayor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				66DC9C5E1CDFB053001A8E25 /* Monster.swift */,
 				66DC9C5C1CDFAE05001A8E25 /* Town.swift */,
 				66DC9C641CDFB3B5001A8E25 /* Vampire.swift */,
+				66DC9C661CDFE50C001A8E25 /* Mayor.swift */,
 			);
 			path = MonsterTown;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 			files = (
 				66DC9C561CDFA30F001A8E25 /* main.swift in Sources */,
 				66DC9C611CDFB11D001A8E25 /* Zombie.swift in Sources */,
+				66DC9C671CDFE50C001A8E25 /* Mayor.swift in Sources */,
 				66DC9C5F1CDFB053001A8E25 /* Monster.swift in Sources */,
 				66DC9C651CDFB3B5001A8E25 /* Vampire.swift in Sources */,
 				66DC9C5D1CDFAE05001A8E25 /* Town.swift in Sources */,

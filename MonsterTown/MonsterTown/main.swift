@@ -8,20 +8,19 @@
 
 import Foundation
 
-var myTown = Town()
+var myTown = Town(region: "South", population: 10000, stoplights: 6, mayor: Mayor())
 myTown.changePopulation(500)
 myTown.printTownDescription()
 let ts = myTown.townSize
 print(ts)
 
-let fredTheZombie = Zombie()
+let fredTheZombie = Zombie(limp: false, fallingApart: false, town: myTown)
+
 fredTheZombie.changeName("Fred the Zombie", walksWithLimp: false)
-fredTheZombie.town = myTown
 fredTheZombie.terrorizeTown()
 fredTheZombie.town?.printTownDescription()
 
-var buffyTheVampire = Vampire()
-buffyTheVampire.town = myTown
+var buffyTheVampire = Vampire(town: myTown, monsterName: "Vampire")
 print("Thralls: " + buffyTheVampire.thralls.description)
 buffyTheVampire.terrorizeTown()
 print("Thralls: " + buffyTheVampire.thralls.description)

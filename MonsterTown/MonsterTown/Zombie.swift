@@ -11,8 +11,14 @@ class Zombie: Monster {
         return "Brains..."
     }
     
-    var walksWithLimp = true
-    internal private(set) var isFallingApart = false
+    var walksWithLimp: Bool
+    internal private(set) var isFallingApart: Bool
+    
+    init(limp: Bool, fallingApart: Bool, town: Town?) {
+        walksWithLimp = limp
+        isFallingApart = fallingApart
+        super.init(town: town, monsterName: "Zombie")
+    }
     
     final override func terrorizeTown() {
 //        if town?.population > 0 {
@@ -22,6 +28,8 @@ class Zombie: Monster {
         if !isFallingApart {
             town?.changePopulation(-10)
         }
+        
+        town?.mayor.reportZombieAttack()
         super.terrorizeTown()
     }
     
